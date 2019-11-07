@@ -9,7 +9,8 @@ import { Article } from './article';
 @Injectable()
 export class ArticleService {
     //URL for CRUD operations
-	articleUrl = "http://localhost:3000/article";
+	host = process.env.NodeJsBackend_publicIP
+	articleUrl = "http://" + host + ":3000/article";
 	//Create constructor to get Http instance
 	constructor(private http:Http) { 
 	}
