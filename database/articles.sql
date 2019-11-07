@@ -1,11 +1,11 @@
-CREATE DATABASE mean_crud;
+CREATE DATABASE IF NOT EXISTS mean_crud;
 
 USE mean_crud;
 
 CREATE TABLE article (
     id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255),
-    category VARCHAR(100)
+    category VARCHAR(100),
     created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

@@ -4,6 +4,14 @@ let serverURLs = {
     "dev": {
         "NODE_SERVER": "http://localhost",
         "NODE_SERVER_PORT": "3000",
+        "MYSQL_HOST": process.env.MySql_privateIP,
+        "MYSQL_USER": process.env.MySql_dbUserName,
+        "MYSQL_PASSWORD": process.env.MySql_dbPassword,
+        'MYSQL_DATABASE': process.env.MySql_dbName,
+    },
+    "sample": {
+        "NODE_SERVER": "http://localhost",
+        "NODE_SERVER_PORT": "3000",
         "MYSQL_HOST": 'localhost',
         "MYSQL_USER": 'root',
         "MYSQL_PASSWORD": 'mysql123',

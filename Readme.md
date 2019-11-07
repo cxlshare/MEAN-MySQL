@@ -4,10 +4,10 @@
 
 ENVIRONMENT
 -----------
-Node Version: 10.17.0
-NPM Version: 6.11.3
-Angular CLI Version: 8.3.17
-MySQL Version: 14.14
+- Node Version: 10.17.0
+- NPM Version: 6.11.3
+- Angular CLI Version: 8.3.17
+- MySQL Version: 14.14
 
 
 SETUP INSTRUCTIONS:
