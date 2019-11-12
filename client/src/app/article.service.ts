@@ -3,16 +3,18 @@ import { Http, Response, Headers, URLSearchParams, RequestOptions } from '@angul
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
+import { environment } from './../environments/environment';
 
 import { Article } from './article';
 
 @Injectable()
 export class ArticleService {
     //URL for CRUD operations
-	host = process.env.NodeJsBackend_publicIP
-	articleUrl = "http://" + host + ":3000/article";
+	// articleUrl = "http://localhost:3000/article";
+	articleUrl = "http://" + environment.hostName + ":3000/article";
 	//Create constructor to get Http instance
 	constructor(private http:Http) { 
+		console.log(this.articleUrl)
 	}
 	
 	//Fetch all articles

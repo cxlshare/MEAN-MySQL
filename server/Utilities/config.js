@@ -1,7 +1,7 @@
 let environment = "dev";
 
 let serverURLs = {
-    "dev": {
+    "dev1": {
         "NODE_SERVER": "http://localhost",
         "NODE_SERVER_PORT": "3000",
         "MYSQL_HOST": process.env.MySql_privateIP,
@@ -9,7 +9,7 @@ let serverURLs = {
         "MYSQL_PASSWORD": process.env.MySql_dbPassword,
         'MYSQL_DATABASE': process.env.MySql_dbName,
     },
-    "sample": {
+    "dev": {
         "NODE_SERVER": "http://localhost",
         "NODE_SERVER_PORT": "3000",
         "MYSQL_HOST": 'localhost',
